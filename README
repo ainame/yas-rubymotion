@@ -1,10 +1,11 @@
-Yasobjc is a tool for yasnippet snippet generation for objective-c library (cocoa/iphone SDK).
+yas-rubymotion.rb is a tool for yasnippet snippet generation for cocoa standard library which using in RubyMotion.
+*This script depends on the ActiveSupport. Please install the 'activesupport' gem.
 
-Basic Usage: yasobjc.rb -o DIR file1 file2 ...
+Basic Usage: ruby yas-rubymotion.rb -o DIR file1 file 2 ...
 
 -o DIR: The output directory for the snippets generated
 
-Example: find /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks -name "*.h" | xargs yasobjc.rb -o ~/.emacs.d/yasnippet/text-mode/cc-mode/objc-mode
+Example: find /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks -name "*.h" | xargs ruby yas-rubymotion.rb -o  ~/.emacs.d/yasnippet/ruby-mode
 
 which will generate all snippets into standard yasnippet directory.
 
